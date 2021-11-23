@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-color: #3C8EAF;
+}
+.propic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.propic > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.propic > div > img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;    
+}
+
+
+.h{
+    font-size: 40px;
+    text-align: center;
+    width: auto;
+    color: #0B2E3C;
+}
+.short-bio{
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    width: 45%;
+    color: #000000;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+a:link, a:visited{
+    color: #225063;
+    background-color: transparent;
+    text-decoration: none;
+}
+.button > div:hover{
+    background-color: #1a3d4c;
+    text-decoration: underline;
+}
+
+.button > div{
+    width: 10%;
+    margin: 10px;
+    background-color: transparent;
+    color: #225063;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    border: 2px solid;
+    border-color: #225063;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social > div{
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px
+}
+
+.section{
+    top: 30px;
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    color: #0B2E3C;
+}
+
+.bio{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+@media only screen and (max-width: 768px){
+    div.button > div{
+        width: auto;
+        margin: 10px;
+        background-color: transparent;
+        color: #225063;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        border: 2px solid;
+        border-color: #225063;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .short-bio{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        color: #000000;
+    }
+    #repos-container{
+        text-align: center;
+    }
+    #repos-container > div{
+        width: 50%;
+        margin-top: 10px;
+    }
+}

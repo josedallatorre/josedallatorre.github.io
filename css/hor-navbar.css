@@ -1,0 +1,27 @@
+.hor-navbar{
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #0B2E3C;
+}
+.hor-navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.hor-navbar  li{
+    float: left;
+    display: inline;
+    font-size: 30px;
+    margin: 10px;
+}
+.hor-navbar li a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+}
+
