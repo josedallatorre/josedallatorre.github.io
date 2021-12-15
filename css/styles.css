@@ -1,61 +1,56 @@
 body{
     margin: 0;
-    background-color: #3C8EAF;
+    background-color: #222629;
 }
-.propic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+H1{
+	text-align:left;
+	margin-left: 25%;
+	margin-word: 25%;
+	color:white;
+	font-size: 50px;
 }
-.propic > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.propic > div > img{
-    width: 50%;
-    height: 50%;
+
+.propic >  img{
     border-radius: 50%;    
-}
-
-
-.h{
-    font-size: 40px;
-    text-align: center;
-    width: auto;
-    color: #0B2E3C;
-}
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:20%;
+    height:20%;
+} 
 .short-bio{
-    margin: auto;
-    font-size: 30px;
-    text-align: center;
-    width: 45%;
-    color: #000000;
+    text-align: center; 
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color:#474b4f;
+    border-radius:10px;
+    color: white;
+}
+.short-bio > p{
+	font-size: 30px;
 }
 .button{
     display: flex;
     justify-content: center;
+    color: transparent;
+    
 }
 a:link, a:visited{
-    color: #225063;
-    background-color: transparent;
+    color: #ffffff;
     text-decoration: none;
 }
 .button > div:hover{
-    background-color: #1a3d4c;
     text-decoration: underline;
 }
 
 .button > div{
-    width: 10%;
+    background-color: #86c232;
+    width: 15%;
     margin: 10px;
-    background-color: transparent;
-    color: #225063;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
     border: 2px solid;
-    border-color: #225063;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -75,13 +70,18 @@ a:link, a:visited{
 }
 
 .section{
-    top: 30px;
-    position: relative;
-    font-size: 40px;
-    text-align: center;
     justify-content: center;
     width: auto;
-    color: #0B2E3C;
+    color: #ffffff;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.section > H3{
+	font-size: 40px;
+}
+.section > p{
+	font-size: 25px;
+	text-align:left;
 }
 
 .bio{
@@ -89,7 +89,9 @@ a:link, a:visited{
     text-align: center;
     justify-content: center;
     width: auto;
-    color: #000000;
+    color: #ffffff;
+    background-color:#474b4f;
+    border-radius:10px;
     margin-left: 10%;
     margin-right: 10%;
 }
