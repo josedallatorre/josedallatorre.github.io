@@ -34,6 +34,12 @@ async function updateRepos() {
 	var repoUrl = data[i].html_url;
         var newRepoUrl = document.createElement("a");
 
+	var repoUrl = data[i].html_url;
+        var newRepoUrl = document.createElement("a");
+
+	var repoUrl = data[i].html_url;
+        var newRepoUrl = document.createElement("a");
+
         var link = document.createTextNode("Check out this repo");
         newRepoUrl.appendChild(link);
         newRepoUrl.title = "Repo link";
