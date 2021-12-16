@@ -17,7 +17,7 @@ async function updateRepos() {
         const cardContainer = document.createElement("div");
         const newCard = document.createElement("ul");
         var name = data[i].name;
-        var newName = document.createElement("li");
+        var newName = document.createElement("H3");
         newName.appendChild(document.createTextNode(name))
         newCard.appendChild(newName);
 
