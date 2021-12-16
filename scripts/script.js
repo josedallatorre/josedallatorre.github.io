@@ -30,11 +30,15 @@ async function updateRepos() {
         var newLang = document.createElement("p");
         newLang.appendChild(document.createTextNode(lang))
         newCard.appendChild(newLang);
-	
-	var repoUrl = data[i].url;
-	var newRepoUrl = document.createElement("a");
-	newRepoUrl.appendChild(document.createTextNode(Checkout this repo!))
-	newCard.appendChild(newRepoUrl);
+
+	var repoUrl = data[i].html_url;
+        var newRepoUrl = document.createElement("a");
+
+        var link = document.createTextNode("Check out this repo");
+        newRepoUrl.appendChild(link);
+        newRepoUrl.title = "Repo link";
+        newRepoUrl.href = repoUrl;
+        newCard.appendChild(newRepoUrl);
 
         document.getElementById("repos-container").appendChild(newCard);
       }
