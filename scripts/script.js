@@ -14,34 +14,29 @@ async function updateRepos() {
       
       // Loop over each object in data array
       for (let i in data) {
-        const cardContainer = document.createElement("div");
-        const newCard = document.createElement("ul");
+        const newCard = document.createElement("div");
         var name = data[i].name;
         var newName = document.createElement("H3");
+        var repoUrl = data[i].html_url;
         newName.appendChild(document.createTextNode(name))
         newCard.appendChild(newName);
-
+	      
         var descr = "Description:\n" + data[i].description;
-        var newDescr = document.createElement("li");
+        var newDescr = document.createElement("p");
         newDescr.appendChild(document.createTextNode(descr))
         newCard.appendChild(newDescr);
 
         var lang = "Language used:\n" + data[i].language;
-        var newLang = document.createElement("li");
+        var newLang = document.createElement("p");
         newLang.appendChild(document.createTextNode(lang))
         newCard.appendChild(newLang);
+	
+	var repoUrl = data[i].url;
+	var newRepoUrl = document.createElement("a");
+	newRepoUrl.appendChild(document.createTextNode(Checkout this repo!))
+	newCard.appendChild(newRepoUrl);
 
-        var repoUrl = data[i].html_url;
-        var newRepoUrl = document.createElement("a");
-        var link = document.createTextNode("Check out this repo");
-        newRepoUrl.appendChild(link);
-        newRepoUrl.title = "Repo link";
-        newRepoUrl.href = repoUrl;
-        newCard.appendChild(newRepoUrl);
-        
-        cardContainer.appendChild(newCard);
-
-        document.getElementById("repos-container").appendChild(cardContainer);
+        document.getElementById("repos-container").appendChild(newCard);
       }
 
   }
