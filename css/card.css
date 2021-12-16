@@ -4,26 +4,30 @@
 	display:grid;
 	grid-template-columns: 1fr 1fr ;
 	grid-gap: 20px;
-	grid-auto-rows: auto; 
+	grid-auto-rows: minmax(100px, auto); 
 	grid-auto-columns: auto;
 }
 
 #repos-container > div{
-	width
+	border:2px solid white;
+	border-radius:10px;
 }
-#repos-container > div > ul{
-	border:10px;
-	border-radius:10px
-	border-color:black;
+#repos-container > div > H3{
+	text-align:center;
+	color: white;
 }
-#repos-container > div > ul >  H3{
+#repos-container > div > p{
+	text-align:center;
 }
-#repos-container > div > ul > li
-{
+#repos-container > div > a{
+	position: relative;
+	display:block;
+	text-align:center;
+	bottom: 0;
 }
-#repos-container a:link, a:visited{
-    color:#ffffff;
+#repos-container > div > a:link, a:visited{
+	color:#ffffff;
 }
-#repos-container a:hover{
-    color:#86c232;
+#repos-container > div >  a:hover{
+	color:#86c232;
 }
