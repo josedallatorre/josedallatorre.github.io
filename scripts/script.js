@@ -16,8 +16,12 @@ async function updateRepos() {
       for (let i in data) {
         const newCard = document.createElement("div");
         var name = data[i].name;
+<<<<<<< HEAD
         var newName = document.createElement("H3");
         var repoUrl = data[i].html_url;
+=======
+        var newName = document.createElement("li");
+>>>>>>> first_ugly_version
         newName.appendChild(document.createTextNode(name))
         newCard.appendChild(newName);
 	      
