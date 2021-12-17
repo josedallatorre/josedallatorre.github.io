@@ -1,5 +1,4 @@
 #repos-container{
-<<<<<<< HEAD
 	margin-left: 25%;
 	margin-right: 25%;
 	display:grid;
@@ -7,13 +6,9 @@
 	grid-gap: 20px;
 	grid-auto-rows: minmax(100px, auto); 
 	grid-auto-columns: auto;
-=======
-    text-align: center;
->>>>>>> first_ugly_version
 }
 
 #repos-container > div{
-<<<<<<< HEAD
 	border:2px solid white;
 	border-radius:10px;
 }
@@ -35,30 +30,4 @@
 }
 #repos-container > div >  a:hover{
 	color:#86c232;
-=======
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 15px;
-}
-#repos-container > div > ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 2px solid;
-    border-color: #000000;
-    border-radius: 10px;
-}
-#repos-container > div > ul > li{
-    display: block;
-    position: relative;
-    overflow: hidden;
-    color: #0B2E3C;
-}
-#repos-container a:link, a:visited{
-    color: #7EBBD3;
-}
-#repos-container a:hover{
-    color:#ffffff;
->>>>>>> first_ugly_version
 }
