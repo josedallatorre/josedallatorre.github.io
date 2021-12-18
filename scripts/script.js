@@ -10,7 +10,7 @@ async function updateRepos() {
       const data = JSON.parse(this.response);
       
       // Log the response
-      console.log(data);
+      //console.log(data);
       
       // Loop over each object in data array
       for (let i in data) {
@@ -33,7 +33,7 @@ async function updateRepos() {
 	var repoUrl = data[i].html_url;
         var newRepoUrl = document.createElement("a");
 
-        var link = document.createTextNode("Check out this repo");
+        var link = document.createTextNode("Check out this project!");
         newRepoUrl.appendChild(link);
         newRepoUrl.title = "Repo link";
         newRepoUrl.href = repoUrl;

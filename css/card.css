@@ -2,7 +2,7 @@
 	margin-left: 25%;
 	margin-right: 25%;
 	display:grid;
-	grid-template-columns: 1fr 1fr ;
+	grid-template-columns: 1fr;
 	grid-gap: 20px;
 	grid-auto-rows: minmax(100px, auto); 
 	grid-auto-columns: auto;
@@ -11,6 +11,7 @@
 #repos-container > div{
 	border:2px solid white;
 	border-radius:10px;
+	background-color:#474b4f;
 }
 #repos-container > div > H3{
 	text-align:center;
@@ -20,14 +21,13 @@
 	text-align:center;
 }
 #repos-container > div > a{
-	position: relative;
 	display:block;
 	text-align:center;
-	bottom: 0;
-}
-#repos-container > div > a:link, a:visited{
 	color:#ffffff;
+	background-color:#86c232;
+	overflow:hidden;
+	border-radius:10px;
 }
 #repos-container > div >  a:hover{
-	color:#86c232;
+	color:#222629;
 }

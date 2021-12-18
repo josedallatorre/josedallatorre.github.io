@@ -1,39 +1,43 @@
 @media only screen and (max-width: 768px){
+	.hor-navbar{
+	}
+	#repos-container > div{
+		margin-left: -20%;
+		margin-right: -20%;
+		grid-gap: 20px;
+		grid-auto-rows: minmax(100px, auto);
+		grid-auto-columns: auto;
+	}
 	.propic > img{
 		width:25%;
 		height:25%;
 	}
 	H1{
-	font-size:35px;
-	text-align:center;
-	margin-left: 15%;
-	margin-right: 15%;
-}
-    .short-bio{
-    margin-left: 15%;
-    margin-right: 15%;
-        font-size: 30px;
-    }
-
+		font-size:35px;
+		text-align:center;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.short-bio{
+		margin-left: 15%;
+		margin-right: 15%;
+		font-size: 30px;
+	}
 	.section{
 		margin-left:15%;
 		margin-right:15%;
+	}
 	div.button{
-		width:10%;
 	}
 
-    div.button > div{
-        width: auto;
-        margin: 10px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 30px;
-        border: 2px solid;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    #repos-container{
-	margin-left:15%;
-	margin-right:15%;
-    }
+	div.button > div{
+		width: auto;
+		margin: 10px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 30px;
+		border: 2px solid;
+		border-radius: 10px;
+		overflow: hidden;
+	}
 }
