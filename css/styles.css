@@ -4,7 +4,7 @@ html{
 body{
 	font-family: 'Courier New', monospace;
 	color:white;
-	margin-left:25%;
+	margin-left:20%;
 	background-color:#222629;
 	text-align:center;
 }
@@ -12,15 +12,21 @@ body{
 	position:fixed;
 	top:0;
 	left:0;
-	width:25%;
+	width:20%;
 	background-color:#474b4f;
 }
+
+.left-navbar p{
+	margin-left:5%;
+	margin-right:5%;
+}
+
 
 .left-navbar  ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 20%;
   background-color: #F4F4F8;
   height: 100%; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
@@ -49,4 +55,12 @@ body{
 }
 .left-navbar .propic{
 	text-align:center;
+}
+div > H1{
+	margin-left:20%;
+	margin-right:20%;
+}
+div > p{
+	margin-left:20%;
+	margin-right:20%;
 }
