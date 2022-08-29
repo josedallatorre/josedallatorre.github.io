@@ -1,7 +1,7 @@
 const username = 'josedallatorre';
 const maxPages = 2;
 const hideForks = true;
-const repoList = document.querySelector('.repo-list');
+const repoList = document.querySelectorAll('.repo-list');
 const reposSection = document.querySelector('#repos');
 
 // get information from github profile
@@ -67,6 +67,7 @@ const displayRepos = (repos) => {
         const starsUrl = `${userHome}/${repo.name}/stargazers`
         const forksUrl = `${userHome}/${repo.name}/network/members`
 
+
         let listItem = document.createElement('li');
         listItem.classList.add('repo');
         listItem.innerHTML = `
@@ -96,6 +97,7 @@ const displayRepos = (repos) => {
             listItem.innerHTML += `<br /> <br />
             <a class="link-btn" href=${repo.html_url}>View Project ${devicons["Github"]}</a><br />`;
         }
+	console.log(listItem);
 
         repoList.append(listItem);
     }
