@@ -99,7 +99,7 @@ const displayRepos = (repos) => {
         }
 	console.log(listItem);
 
-        repoList.append(listItem);
+        document.getElementById('repo').append(listItem);
     }
 };
 // for programming language icons
