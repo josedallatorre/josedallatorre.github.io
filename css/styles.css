@@ -49,6 +49,7 @@ body{
   color: black;
 }
 .left-navbar .propic  img{
+	margin-top: 20px;
 	height:auto;
 	max-width:50%;
 	border-radius:50%;
@@ -64,8 +65,42 @@ div > p{
 	margin-left:20%;
 	margin-right:20%;
 }
-#projects #repos {
-	background-color: green;
-	width:25%;
-	color:black;
+#projects #repos li{
+	list-style-type:none;
+	background-color: #F4F4F8;
+	border-radius:25px;
+	border-color: #1688f0;
+	border-width:2px;
+	border-style:solid;
+	margin-left:25%;
+	margin-right:25%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align:center;
+	padding-bottom: 15px;
 }
+
+#projects #repos li H3{
+	color: #1688f0;
+}
+#projects #repos li span{
+	color: #151515;
+}
+#projects #repos li a{
+	color: #1688f0;
+	text-decoration:none;
+}
+#projects #repos li a.link-btn{
+	padding: 10px 5px;
+	border-width:2px;
+	border-style:solid;
+	border-color: #1688f0;
+	border-radius:30px;
+}
+
+#projects #repos li a.link-btn:hover{
+	background: #1688f0;;
+	border: 2px solid #222629;
+	transform: scale(1.1);
+}
+
