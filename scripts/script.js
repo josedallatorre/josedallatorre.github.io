@@ -42,12 +42,13 @@ async function updateRepos() {
         itemWrapper.appendChild(modalUrl)
         itemWrapper.appendChild(folioTable)
         newCard.appendChild(itemWrapper)
+
         
 
         //TODO fare come https://mayanigrin.com/ nei progetti, no modal
-        var newModal = document.createElement("div");
+        var newModal = document.createElement("section");
         newModal.setAttribute("id","modal-"+i);
-        newModal.setAttribute("class","popup-modal slider ");
+        newModal.setAttribute("class","modal hidden");
         const newMedia = document.createElement("div");
         newMedia.setAttribute("class","media");
         const imgMedia = document.createElement("img");
@@ -56,10 +57,20 @@ async function updateRepos() {
         descrBox.setAttribute("class","description-box");
         var descName = document.createElement("H4");
         descName.appendChild(document.createTextNode(name));
+        var linkBox = document.createElement("div");
+        var linkRepo = document.createElement("a");
+        linkRepo.href = data[i].html_url;
+        var dismiss = document.createElement("a");
+        dismiss.setAttribute("class","popup-modal-dismiss")
+        dismiss.href = "#"
+        linkBox.appendChild(linkRepo)
+        linkBox.appendChild(dismiss)
+
         descrBox.appendChild(descName)
         newMedia.appendChild(imgMedia)
         newModal.appendChild(newMedia)
         newModal.appendChild(descrBox)
+        newModal.appendChild(linkBox)
 
         /*
         var descr = data[i].description;
@@ -94,3 +105,9 @@ async function updateRepos() {
 }
 
 updateRepos();
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+//openModalBtn.addEventListener("click", openModal);
