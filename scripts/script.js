@@ -15,53 +15,13 @@ async function updateRepos() {
       // Loop over each object in data array
       for (let i in data) {
         const newCard = document.createElement("div");
-        newCard.setAttribute("class","bgrid folio-item");
-        const itemWrapper= document.createElement("div");
-        itemWrapper.setAttribute("class","item-wrapper");
-        const img = document.createElement("img");
-        img.src="images/portfolio/liberty.jpg" 
-        var modalUrl = document.createElement("a");
-        modalUrl.setAttribute("class", "overlay");
-        modalUrl.href= "#modal-"+ i
-        const folioTable = document.createElement("div");
-        folioTable.setAttribute("class","folio-item-table");
-        const folioCell = document.createElement("div");
-        folioCell.setAttribute("class","folio-item-cell");
-        
+        newCard.setAttribute("class","col-md-4 h-100 w-50")
+        newCard.setAttribute("style","border:2px solid black")
         var name = data[i].name;
         var newName = document.createElement("H3");
-        newName.appendChild(document.createTextNode(name));
-        newName.setAttribute("class","folio-title");
-        var newType = document.createElement("span");
-        newType.setAttribute("class","folio-types");
-        newType.appendChild(document.createTextNode("Development"));
-        folioCell.appendChild(newName);
-        folioCell.appendChild(newType);
-        folioTable.appendChild(folioCell)
-        itemWrapper.appendChild(img)
-        itemWrapper.appendChild(modalUrl)
-        itemWrapper.appendChild(folioTable)
-        newCard.appendChild(itemWrapper)
-        
-
-        //TODO fare come https://mayanigrin.com/ nei progetti, no modal
-        var newModal = document.createElement("div");
-        newModal.setAttribute("id","modal-"+i);
-        newModal.setAttribute("class","popup-modal slider ");
-        const newMedia = document.createElement("div");
-        newMedia.setAttribute("class","media");
-        const imgMedia = document.createElement("img");
-        imgMedia.src="images/portfolio/modals/m-shutterbug.jpg"
-        var descrBox = document.createElement("div");
-        descrBox.setAttribute("class","description-box");
-        var descName = document.createElement("H4");
-        descName.appendChild(document.createTextNode(name));
-        descrBox.appendChild(descName)
-        newMedia.appendChild(imgMedia)
-        newModal.appendChild(newMedia)
-        newModal.appendChild(descrBox)
-
-        /*
+        newName.appendChild(document.createTextNode(name))
+        newCard.appendChild(newName);
+	      
         var descr = data[i].description;
         var newDescr = document.createElement("p");
         newDescr.appendChild(document.createTextNode(descr))
@@ -80,10 +40,8 @@ async function updateRepos() {
         newRepoUrl.title = "Repo link";
         newRepoUrl.href = repoUrl;
         newCard.appendChild(newRepoUrl);
-        */
 
         document.getElementById("repos-container").appendChild(newCard);
-        document.getElementById("modal-container").appendChild(newModal);
       }
 
   }
