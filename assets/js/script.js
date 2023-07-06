@@ -71,6 +71,7 @@ const displayRepos = (repos) => {
         col.classList.add('col-md-3');
         let card = document.createElement('div');
         card.classList.add('card');
+        card.classList.add('border-warning');
         card.classList.add('text-white');
         card.classList.add('bg-secondary');
         card.classList.add('my-3');

@@ -1,3 +1,4 @@
+/*
 :root{
 	--primary-color:#264653;
 	--secondary-color:#2a9d8f;
@@ -5,6 +6,7 @@
 	--fourth-color:#f4a261;
 	--fifth-color:#e76f51;
 }
+*/
 
 html{
 	scroll-behavior: smooth;
@@ -14,4 +16,7 @@ body{
 	color: var(--fourth-color);
 	background-color:var(--secondary-color);
 	text-align:center;
+}
+.card {
+	border: 5px solid black;
 }
