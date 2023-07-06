@@ -59,20 +59,43 @@ const displayRepos = (repos) => {
 	console.log(repoList);
     const userHome = `https://github.com/${username}`
     for (const repo of repos) {
+        /*
         if (repo.fork && hideForks) {
             continue;
         }
-
+        */
         const langUrl = `${userHome}?tab=repositories&q=&language=${repo.language}`
         const starsUrl = `${userHome}/${repo.name}/stargazers`
         const forksUrl = `${userHome}/${repo.name}/network/members`
+        let col = document.createElement('div');
+        col.classList.add('col-md-3');
+        let card = document.createElement('div');
+        card.classList.add('card');
+        card.classList.add('text-white');
+        card.classList.add('bg-secondary');
+        card.classList.add('my-3');
+        card.classList.add('mx-3');
+        card.classList.add('text-center');
+        
+        let cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+        cardBody.innerHTML=`
+        <h5 class="card-title">${repo.name}</h5>
+        <p class="card-text">${repo.description}</p>`
+        let imgRepo = document.createElement("img");
+        imgRepo.classList.add('img-fluid');
+        imgRepo.src="assets/img/logo-scegli-meglio.png";
+        card.appendChild(imgRepo)
+        card.appendChild(cardBody)
+        col.appendChild(card)
+        document.getElementById('repos').append(col);
 
 
         let listItem = document.createElement('li');
         listItem.classList.add('repo');
         listItem.innerHTML = `
-            <h3>${repo.name}</h3>
-            <span>${repo.description}</span> <br/><br/>`
+        <h3>${repo.name}</h3>
+        <span>${repo.description}</span> <br/><br/>`
 
         if (repo.stargazers_count > 0) {
             listItem.innerHTML += `<a href="${starsUrl}">
@@ -99,7 +122,7 @@ const displayRepos = (repos) => {
         }
 	console.log(listItem);
 
-        document.getElementById('repos').append(listItem);
+        //document.getElementById('repos').append(listItem);
     }
 };
 // for programming language icons
