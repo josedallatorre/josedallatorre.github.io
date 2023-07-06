@@ -23,9 +23,9 @@ const getProfile = async () => {
 getProfile();
 
 const updatePropic = (profile) =>{
-	const propic = document.querySelector('.propic');
+	const propic = document.getElementById('propic')
 	propic.innerHTML = `
-	<img alt = "user avatar" src=${profile.avatar_url}/>
+	<img alt = "user avatar" src=${profile.avatar_url} class="rounded-circle mw-100 mh-100"/>
 	`;
 	};
 

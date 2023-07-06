@@ -1,0 +1,17 @@
+:root{
+	--primary-color:#264653;
+	--secondary-color:#2a9d8f;
+	--third-color:#e9c46a;
+	--fourth-color:#f4a261;
+	--fifth-color:#e76f51;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Courier New', monospace;
+	color: var(--fourth-color);
+	background-color:var(--secondary-color);
+	text-align:center;
+}
