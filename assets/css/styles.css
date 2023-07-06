@@ -20,6 +20,3 @@ body{
 .card {
 	border: 5px solid black;
 }
-@import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
