@@ -103,16 +103,8 @@ const displayRepos = (repos) => {
         card.appendChild(imgRepo)
         card.appendChild(cardBody)
         card.appendChild(linkRepo)
-        col.appendChild(card)
-        document.getElementById('repos').append(col);
-
 
         let listItem = document.createElement('li');
-        listItem.classList.add('repo');
-        listItem.innerHTML = `
-        <h3>${repo.name}</h3>
-        <span>${repo.description}</span> <br/><br/>`
-
         if (repo.stargazers_count > 0) {
             listItem.innerHTML += `<a href="${starsUrl}">
             <span>⭐ ${repo.stargazers_count}</span></a>`
@@ -128,17 +120,10 @@ const displayRepos = (repos) => {
             <span>${devicons["Git"]} ${repo.forks_count}</span></a>`
         }
 
-        if (repo.homepage && repo.homepage !== "") {
-            listItem.innerHTML += `<br /> <br />
-            <a class="link-btn" href=${repo.html_url}>Code ${devicons["Github"]}</a>
-            <a class="link-btn" href=${repo.homepage}>Live ${devicons["Chrome"]}</a> <br />`;
-        } else {
-            listItem.innerHTML += `<br /> <br />
-            <a class="link-btn" href=${repo.html_url}>View Project ${devicons["Github"]}</a><br />`;
-        }
-	console.log(listItem);
+        card.appendChild(listItem)
+        col.appendChild(card)
+        document.getElementById('repos').append(col);
 
-        //document.getElementById('repos').append(listItem);
     }
 };
 checkLink = async url => (await fetch(url)).ok
