@@ -18,6 +18,7 @@ const getProfile = async () => {
 	const profile = await res.json();
 	console.log(profile);
 	updatePropic(profile);
+	updatePicNavbar(profile);
 };
 
 getProfile();
@@ -25,6 +26,13 @@ getProfile();
 const updatePropic = (profile) =>{
 	const propic = document.getElementById('propic')
 	propic.innerHTML = `
+	<img alt = "user avatar" src=${profile.avatar_url} class="rounded-circle mw-100 mh-100"/>
+	`;
+	};
+const updatePicNavbar = (profile) =>{
+	const propic = document.getElementById('navbar-propic')
+    console.log(propic);
+    propic.innerHTML = `
 	<img alt = "user avatar" src=${profile.avatar_url} class="rounded-circle mw-100 mh-100"/>
 	`;
 	};
@@ -59,16 +67,15 @@ const displayRepos = (repos) => {
 	console.log(repoList);
     const userHome = `https://github.com/${username}`
     for (const repo of repos) {
-        /*
         if (repo.fork && hideForks) {
             continue;
         }
-        */
         const langUrl = `${userHome}?tab=repositories&q=&language=${repo.language}`
         const starsUrl = `${userHome}/${repo.name}/stargazers`
         const forksUrl = `${userHome}/${repo.name}/network/members`
         let col = document.createElement('div');
-        col.classList.add('col-md-3');
+        col.classList.add('col-12')
+        col.classList.add('col-lg-4');
         let card = document.createElement('div');
         card.classList.add('card');
         card.classList.add('border-warning');
@@ -85,9 +92,17 @@ const displayRepos = (repos) => {
         <p class="card-text">${repo.description}</p>`
         let imgRepo = document.createElement("img");
         imgRepo.classList.add('img-fluid');
-        imgRepo.src="assets/img/logo-scegli-meglio.png";
+        let imgLink = "https://github.com/josedallatorre/"+repo.name+"/blob/main/preview.png?raw=true"
+        imgRepo.src=imgLink
+        let linkRepo = document.createElement("a");
+        linkRepo.classList.add("btn");
+        linkRepo.classList.add("btn-dark");
+        linkRepo.classList.add("w-100");
+        linkRepo.href=repo.html_url
+        linkRepo.textContent+="Find more!"
         card.appendChild(imgRepo)
         card.appendChild(cardBody)
+        card.appendChild(linkRepo)
         col.appendChild(card)
         document.getElementById('repos').append(col);
 
@@ -126,6 +141,7 @@ const displayRepos = (repos) => {
         //document.getElementById('repos').append(listItem);
     }
 };
+checkLink = async url => (await fetch(url)).ok
 // for programming language icons
 const devicons = {
     Git: '<i class="devicon-git-plain" style="color: #555"></i>',
