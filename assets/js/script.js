@@ -102,7 +102,6 @@ const displayRepos = (repos) => {
         linkRepo.textContent+="Find more!"
         card.appendChild(imgRepo)
         card.appendChild(cardBody)
-        card.appendChild(linkRepo)
 
         let listItem = document.createElement('li');
         if (repo.stargazers_count > 0) {
@@ -111,16 +110,15 @@ const displayRepos = (repos) => {
         }
 
         if (repo.language) {
-            listItem.innerHTML += `<a href="${langUrl}">
-            <span>${devicons[repo.language]}</span></a>`
+            listItem.innerHTML += `${devicons[repo.language]}`
         }
 
         if (repo.forks_count > 0) {
-            listItem.innerHTML += `<a href="${starsUrl}">
-            <span>${devicons["Git"]} ${repo.forks_count}</span></a>`
+            listItem.innerHTML += `${devicons["Git"]} ${repo.forks_count}`
         }
 
         card.appendChild(listItem)
+        card.appendChild(linkRepo)
         col.appendChild(card)
         document.getElementById('repos').append(col);
 

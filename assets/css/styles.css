@@ -166,3 +166,11 @@ body{
 		padding-left: 5.5rem;
 	}
 }
+#repos li{
+	list-style: none;
+}
+#repos i{
+	font-size:2em;
+	margin-right: 0.3em;
+	display: inline-block;
+  }
