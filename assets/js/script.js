@@ -78,9 +78,8 @@ const displayRepos = (repos) => {
         col.classList.add('col-lg-4');
         let card = document.createElement('div');
         card.classList.add('card');
-        card.classList.add('border-warning');
         card.classList.add('text-white');
-        card.classList.add('bg-secondary');
+        card.classList.add('bg-dark');
         card.classList.add('my-3');
         card.classList.add('mx-3');
         card.classList.add('text-center');
@@ -96,7 +95,7 @@ const displayRepos = (repos) => {
         imgRepo.src=imgLink
         let linkRepo = document.createElement("a");
         linkRepo.classList.add("btn");
-        linkRepo.classList.add("btn-dark");
+        linkRepo.classList.add("btn-primary");
         linkRepo.classList.add("w-100");
         linkRepo.href=repo.html_url
         linkRepo.textContent+="Find more!"
