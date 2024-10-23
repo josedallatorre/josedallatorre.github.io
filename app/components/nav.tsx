@@ -13,8 +13,8 @@ const navItems = {
   '/projects': {
     name: 'projects',
   },
-  '/contacts': {
-    name: 'contacts',
+  '/contact': {
+    name: 'contact',
   },
 }
 
