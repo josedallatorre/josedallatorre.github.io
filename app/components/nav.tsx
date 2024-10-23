@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import { ModeToggle } from './toggle-theme';
 
 const navItems = {
   '/': {
@@ -44,7 +43,6 @@ export function Navbar() {
                 </Link>
               )
             })}
-            <ModeToggle/>
           </div>
         </nav>
       </div>
