@@ -6,7 +6,7 @@ const SocialLinks: React.FC = () => {
   return (
     <div className="flex space-x-3 items-center">
       {/*<ResumeButton />*/}
-      <a href="<mailto:jose.dallatorre@hotmail.com" className="text-gray-400 hover:text-white">
+      <a href="mailto:jose.dallatorre@hotmail.com" target="_blank" className="text-gray-400 hover:text-white">
         <FaEnvelope size={24} />
       </a>
       <a href="https://www.linkedin.com/in/josedallatorre/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
