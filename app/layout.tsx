@@ -9,6 +9,7 @@ import SocialLinks from 'app/components/social'
 import Header from 'app/components/header'
 import Footer from 'app/components/footer'
 import { Navbar } from './components/nav';
+import { ThemeProvider } from "./components/theme-provider"
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -53,6 +54,13 @@ export default function RootLayout({
       GeistMono.variable
     )}>
       <body>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
     <div className="min-h-screen  text-white">
     {/* Mobile Layout */}
     <div className="lg:hidden">
@@ -93,6 +101,7 @@ export default function RootLayout({
       </div>
     </div>
   </div>
+          </ThemeProvider>
       </body>
     </html>
   )
