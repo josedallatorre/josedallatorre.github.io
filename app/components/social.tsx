@@ -1,4 +1,3 @@
-// SocialLinks.tsx
 import React from 'react';
 import { FaGithub, FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa';
 //import ResumeButton from '../components/ResumeButton';
