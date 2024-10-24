@@ -10,10 +10,21 @@ export default function Page() {
       <h2 className="mt-6 mb-4">Work Experience</h2>
       <MdWork />
       <div className="border-l border-sky-500">
-        <div className="ml-4">
+        <div className="ml-4 flex flex-row">
+          <div className="basis-1/4">
+            <Image
+              src="/adl.jpg"
+              width={100}
+              height={100}
+              alt="University of Udine logo"
+              className="rounded-full"
+            />
+          </div>
+          <div className="basis-3/4">
           <h3>IoT Developer - Intern</h3>
           <h4>ADL Ingegneria Informatica</h4>
           <p>April 2022 - June 2022</p>
+          </div>
         </div>
         <div className="ml-4">
           <p>Designed and developed a IoT system capable of handling RFID based communication.
