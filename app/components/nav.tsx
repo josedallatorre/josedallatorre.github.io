@@ -35,7 +35,7 @@ export function Navbar() {
                   href={path}
                   className={clsx("transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1",
                   {
-                    'bg-sky-100 text-blue-600': pathname === path,
+                    'text-neutral-600': pathname === path,
                   },
                 )}
                 >
