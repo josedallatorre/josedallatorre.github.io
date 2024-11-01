@@ -7,8 +7,8 @@ export default function Page() {
     <section id="resume">
       <p className="text-3xl font-bold">Here are my work experiences and education.</p>
       <div className="mt-6 mb-4 flex flex-row">
-        <MdWork size={50}/>
-        <p className="mx-2 m-4 text-lg text-bold">Work Experience</p>
+        <MdWork size={45}/>
+        <p className="m-4 text-lg font-bold">Work Experience</p>
       </div>
       <div className="border-l border-zinc-400 mt-8">
         <div className="ml-4 flex flex-row">
