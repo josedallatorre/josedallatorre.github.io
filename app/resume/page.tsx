@@ -82,7 +82,7 @@ export default function Page() {
             />
           </div>
           <div className="basis-3/4">
-            <p className="text-3xl font-bold">Master Degree</p>
+            <p className="text-3xl font-bold">M.Sc. in Computer Science</p>
             <p className="text-lg text-zinc-200 font-bold">University of Udine</p>
             <p className="text-zinc-400 font-bold">March 2023 - Present</p>
           </div>
@@ -104,7 +104,7 @@ export default function Page() {
             />
           </div>
           <div className="basis-3/4">
-            <p className="text-3xl font-bold">Bachelor Degree</p>
+            <p className="text-3xl font-bold">B.Sc. in Computer Science</p>
             <p className="text-lg text-zinc-200 font-bold">University of Udine</p>
             <p className="text-zinc-400 font-bold">September 2019 - March 2023</p>
           </div>
@@ -119,10 +119,10 @@ export default function Page() {
         <div className="ml-4 flex flex-row">
           <div className="basis-1/4">
             <Image
-              src="/uniud.svg"
+              src="/marchesini.png"
               width={100}
               height={100}
-              alt="University of Udine logo"
+              alt="G. Marchesini logo"
               className="rounded-full"
             />
           </div>
@@ -132,10 +132,13 @@ export default function Page() {
             <p className="text-zinc-400 font-bold">September 2013 - July 2019</p>
           </div>
         </div>
-        <div className="ml-4 mt-4">
-          <p className="text-slate-100 font-bold">I partecipated in projects with IT interest like AR development and economics and entrepreneurship focus.
+        <div className="ml-6 mt-4">
+          <ul className="list-disc">
+          <li className="text-slate-100 font-bold">High School Diploma with focus on Economics and Informatics</li>
+          <li className="text-slate-100 font-bold">I partecipated in projects with IT interest like AR development and economics and entrepreneurship focus.
             Received extra curricula credit as a student athlete.
-          </p>
+          </li>
+          </ul>
         </div>
       </div>
     </section>
