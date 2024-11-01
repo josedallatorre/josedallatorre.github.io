@@ -30,7 +30,7 @@ export default function Page() {
         <div className="ml-6 mt-4">
           <ul className="list-disc">
             <li className="text-slate-100 font-bold">Designed and developed a IoT system capable of handling RFID based communication.
-            Integrated with the architecture used by the company.
+              Integrated with the architecture used by the company.
             </li>
             <li className="text-slate-100 font-bold">Integrated with the architecture used by the company.
             </li>
@@ -40,9 +40,35 @@ export default function Page() {
 
 
       <div className="mt-6 mb-4 flex flex-row">
-        <FaGraduationCap size={50}/>
+        <FaGraduationCap size={50} />
         <p className="m-4 text-lg font-bold">Education</p>
       </div>
+
+      <div className="border-l border-zinc-400 mt-8">
+        <div className="ml-4 flex flex-row">
+          <div className="basis-1/4">
+            <Image
+              src="/ulisboa.png"
+              width={100}
+              height={100}
+              alt="University of Lisboa logo"
+              className="rounded-full"
+            />
+          </div>
+          <div className="basis-3/4">
+            <p className="text-3xl font-bold">Visiting Student</p>
+            <p className="text-lg text-zinc-200 font-bold">Faculty of Science, ULisboa</p>
+            <p className="text-zinc-400 font-bold">September 2024 - February 2025</p>
+          </div>
+        </div>
+        <div className="ml-6 mt-4">
+          <ul className="list-disc">
+          <li className="text-slate-100 font-bold">Relevant coursework: Software Reliability, Advanced Machine Learning and Advanced Databases</li>
+          <li className="text-slate-100 font-bold">Grant by University of Udine and Erasmus+ study.</li>
+          </ul>
+        </div>
+      </div>
+
 
       <div className="border-l border-zinc-400 mt-8">
         <div className="ml-4 flex flex-row">
