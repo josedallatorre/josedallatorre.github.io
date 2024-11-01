@@ -6,11 +6,11 @@ export default function Page() {
   return (
     <section id="resume">
       <p className="text-3xl font-bold">Here are my work experiences and education.</p>
-      <div className="mt-6 mb-4 flex flex-row">
+      <div className="mt-6 flex flex-row">
         <MdWork size={45}/>
         <p className="m-4 text-lg font-bold">Work Experience</p>
       </div>
-      <div className="border-l border-zinc-400 mt-8">
+      <div className="border-l border-zinc-400 mt-4">
         <div className="ml-4 flex flex-row">
           <div className="basis-1/4">
             <Image
@@ -39,12 +39,12 @@ export default function Page() {
       </div>
 
 
-      <div className="mt-6 mb-4 flex flex-row">
+      <div className="mt-8 mb-4 flex flex-row">
         <FaGraduationCap size={50} />
         <p className="m-4 text-lg font-bold">Education</p>
       </div>
 
-      <div className="border-l border-zinc-400 mt-8">
+      <div className="border-l border-zinc-400 mt-4">
         <div className="ml-4 flex flex-row">
           <div className="basis-1/4">
             <Image
