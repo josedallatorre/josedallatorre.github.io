@@ -13,9 +13,11 @@ const navItems = {
   '/projects': {
     name: 'projects',
   },
+  /*
   '/contact': {
     name: 'contact',
   },
+  */
 }
 
 export function Navbar() {
