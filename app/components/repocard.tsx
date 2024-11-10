@@ -7,7 +7,7 @@ import {
 } from 'react-icons/di';
 import {
   SiTypescript, SiScala, SiElixir, SiErlang, SiPerl, SiClojure, SiDart,
-  SiHaskell, SiVim, SiSolidity, SiFortran, SiJulia, SiR, SiFsharp, SiKotlin, SiC, SiCplusplus
+  SiHaskell, SiVim, SiSolidity, SiFortran, SiJulia, SiR, SiFsharp,
 } from 'react-icons/si';
 
 interface Repo {
