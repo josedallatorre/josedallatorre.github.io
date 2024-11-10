@@ -46,9 +46,9 @@ const cx = (...classes: string[]) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en"
       className={cx(
@@ -98,5 +98,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  )
+  );
 }
