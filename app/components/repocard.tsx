@@ -1,5 +1,5 @@
 import React from 'react';
-import { GithubOriginal, COriginal, BashOriginal} from 'devicons-react';
+import { GithubOriginal, COriginal, BashOriginal } from 'devicons-react';
 import {
   DiJavascript1, DiPython, DiJava, DiHtml5, DiCss3, DiGo, DiRust,
   DiSwift, DiRuby, DiPhp, DiDocker, DiNodejs,
@@ -85,27 +85,29 @@ const RepoCard: React.FC<Props> = ({ repo, username, hideForks }) => {
           </div>
           <div className="basis-3/4">
             <p className="text-3xl font-bold">{repo.name}</p>
-            {repo.language && (
-              <span className="flex items-center space-x-2">
-                {languageIcons[repo.language] || <span>{repo.language}</span>}
-              </span>
-            )}
-            {repo.stargazers_count > 0 && (
-              <a href={`${repo.html_url}/stargazers`} className="flex items-center">
-                <span>⭐ {repo.stargazers_count}</span>
-              </a>
-            )}
-            {repo.forks_count > 0 && (
-              <span className="flex items-center space-x-2">
-              <img
-                src="/git-fork.svg"
-                width={20}
-                height={20}
-                alt="forks of the repo"
-              /> 
-               {repo.forks_count}
-              </span>
-            )}
+            <div className="flex items-center space-x-4">
+              {repo.language && (
+                <span className="flex items-center space-x-2">
+                  {languageIcons[repo.language] || <span>{repo.language}</span>}
+                </span>
+              )}
+              {repo.stargazers_count > 0 && (
+                <a href={`${repo.html_url}/stargazers`} className="flex items-center">
+                  <span>⭐ {repo.stargazers_count}</span>
+                </a>
+              )}
+              {repo.forks_count > 0 && (
+                <span className="flex items-center space-x-2">
+                  <img
+                    src="/git-fork.svg"
+                    width={20}
+                    height={20}
+                    alt="forks of the repo"
+                  />
+                  {repo.forks_count}
+                </span>
+              )}
+            </div>
           </div>
         </div>
         <div className="ml-6 mt-4">
@@ -116,21 +118,21 @@ const RepoCard: React.FC<Props> = ({ repo, username, hideForks }) => {
           {repo.html_url && (
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
               <GithubOriginal size="40"
-              className="mx-2"
-               />
+                className="mx-2"
+              />
               <span>View Code</span>
             </a>
           )}
-            {repo.html_url && (
+          {repo.html_url && (
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
-              <img src="external-link.png" 
-              width={35}
-              height={35}
-              className="mr-2"
+              <img src="external-link.png"
+                width={35}
+                height={35}
+                className="mr-2"
               />
               <span>Live Demo</span>
             </a>
-            )}
+          )}
         </div>
       </div>
     </div>
