@@ -113,34 +113,6 @@ export default function Page() {
           <p className="text-slate-100 font-bold">Relevant coursework: Software Engineering, Computer Networks, Database Systems, User Interface Design, Algorithms and Data Structures</p>
         </div>
       </div>
-
-
-      <div className="border-l border-zinc-400 mt-8">
-        <div className="ml-4 flex flex-row">
-          <div className="basis-1/4">
-            <Image
-              src="/marchesini.png"
-              width={100}
-              height={100}
-              alt="G. Marchesini logo"
-              className="rounded-full"
-            />
-          </div>
-          <div className="basis-3/4">
-            <p className="text-3xl font-bold">High School Diploma</p>
-            <p className="text-lg text-zinc-200 font-bold">ISIS Giuseppe Marchesini</p>
-            <p className="text-zinc-400 font-bold">September 2013 - July 2019</p>
-          </div>
-        </div>
-        <div className="ml-6 mt-4">
-          <ul className="list-disc">
-          <li className="text-slate-100 font-bold">High School Diploma with focus on Economics and Informatics</li>
-          <li className="text-slate-100 font-bold">I partecipated in projects with IT interest like AR development and economics and entrepreneurship focus.
-            Received extra curricula credit as a student athlete.
-          </li>
-          </ul>
-        </div>
-      </div>
     </section>
   );
 }
