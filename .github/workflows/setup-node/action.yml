@@ -20,4 +20,4 @@ runs:
       if: steps.cache_dependencies.outputs.cache-hit != 'true'
       run: |
        npm install -g pnpm
-       pnpm install
+       pnpm install --no-frozen-lockfile
