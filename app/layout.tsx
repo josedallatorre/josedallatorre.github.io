@@ -85,7 +85,6 @@ export default function RootLayout({
                 <Navbar />
                 <div className="mt-3">
                   {children}
-                  <Footer />
                   <Analytics />
                   <SpeedInsights />
                 </div>
