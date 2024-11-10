@@ -14,9 +14,9 @@ export default function Header(){
       <h1 className="text-4xl font-bold mb-2">Josè Dalla Torre</h1>
       <h2 className="text-xl text-gray-400 mb-4">Student | Software Engineer</h2>
       <h3 className="text-lg text-gray-400 mb-4">📍 Udine, Italy 🇮🇹</h3>
-      /*
-      * <p className="text-gray-300 text-sm">Breve frase</p>
-      */
+      {/*
+      <p className="text-gray-300 text-sm">Breve frase</p>
+      */}
     </header>
   );
 };
