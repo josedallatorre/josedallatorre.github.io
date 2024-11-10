@@ -18,7 +18,7 @@ export default function Page() {
               src={`${prefix}/adl.jpg`}
               width={100}
               height={100}
-              alt="University of Udine logo"
+              alt="ADL logo"
               className="rounded-full"
             />
           </div>
