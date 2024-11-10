@@ -40,7 +40,7 @@ const HomePage: React.FC = () => {
 
   return (
     <section id="projects">
-      <p>My projects</p>
+      <p className="text-3xl font-bold">Here are some of my projects. Not all are shown for various reasons.</p>
       <div id="repos" className="">
         {repos.map((repo) => (
           <RepoCard key={repo.id} repo={repo} username={username} hideForks={hideForks} />
