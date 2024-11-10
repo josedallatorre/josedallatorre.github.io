@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
   return (
     <section id="projects">
       <p>My projects</p>
-      <div id="repos" className="row">
+      <div id="repos" className="">
         {repos.map((repo) => (
           <RepoCard key={repo.id} repo={repo} username={username} hideForks={hideForks} />
         ))}
