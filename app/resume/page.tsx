@@ -1,6 +1,7 @@
 import { MdWork } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa";
-import Image from 'next/image'
+//import Image from 'next/image'
+import Image from "next/legacy/image";
 import { prefix } from "@/utils/prefix";
 
 export default function Page() {
@@ -15,7 +16,7 @@ export default function Page() {
         <div className="ml-4 flex flex-row">
           <div className="basis-1/4">
             <Image
-              src={`${prefix}/adl.jpg`}
+              src="./adl.jpg"
               width={100}
               height={100}
               alt="ADL logo"
