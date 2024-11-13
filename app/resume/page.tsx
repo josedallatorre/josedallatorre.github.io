@@ -15,7 +15,7 @@ export default function Page() {
         <div className="ml-4 flex flex-row">
           <div className="basis-1/4">
             <Image
-              src="./adl.jpg"
+              src={`${prefix}/adl.jpg`}
               width={100}
               height={100}
               alt="ADL logo"
