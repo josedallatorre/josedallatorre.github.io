@@ -84,7 +84,7 @@ const RepoCard: React.FC<Props> = ({ repo, username, hideForks }) => {
             />
           </div>
           <div className="basis-3/4">
-            <p className="text-3xl font-bold">{repo.name}</p>
+            <p className="text-2xl font-bold break-all">{repo.name}</p>
             <div className="flex items-center space-x-4">
               {repo.language && (
                 <span className="flex items-center space-x-2">
