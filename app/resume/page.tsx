@@ -23,7 +23,7 @@ export default function Page() {
               className="rounded-full"
             />
           </div>
-          <div className="basis-3/4">
+          <div className="basis-3/4 pl-2">
             <p className="text-3xl font-bold">IoT Developer - Intern</p>
             <p className="text-lg text-zinc-200 font-bold">ADL Ingegneria Informatica</p>
             <p className="text-zinc-400 font-bold">April 2022 - June 2022</p>
@@ -57,7 +57,7 @@ export default function Page() {
               className="rounded-full"
             />
           </div>
-          <div className="basis-3/4">
+          <div className="basis-3/4 pl-2">
             <p className="text-3xl font-bold">Visiting Student</p>
             <p className="text-lg text-zinc-200 font-bold">Faculty of Science, ULisboa</p>
             <p className="text-zinc-400 font-bold">September 2024 - February 2025</p>
@@ -83,7 +83,7 @@ export default function Page() {
               className="rounded-full"
             />
           </div>
-          <div className="basis-3/4">
+          <div className="basis-3/4 pl-2">
             <p className="text-3xl font-bold">M.Sc. in Computer Science</p>
             <p className="text-lg text-zinc-200 font-bold">University of Udine</p>
             <p className="text-zinc-400 font-bold">March 2023 - Present</p>
@@ -105,7 +105,7 @@ export default function Page() {
               className="rounded-full"
             />
           </div>
-          <div className="basis-3/4">
+          <div className="basis-3/4 pl-2">
             <p className="text-3xl font-bold">B.Sc. in Computer Science</p>
             <p className="text-lg text-zinc-200 font-bold">University of Udine</p>
             <p className="text-zinc-400 font-bold">September 2019 - March 2023</p>

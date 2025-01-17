@@ -83,7 +83,7 @@ const RepoCard: React.FC<Props> = ({ repo, username, hideForks }) => {
               className="w-24 h-24 object-cover rounded-full"
             />
           </div>
-          <div className="basis-3/4">
+          <div className="basis-3/4 pl-2">
             <p className="text-2xl font-bold break-all">{repo.name}</p>
             <div className="flex items-center space-x-4">
               {repo.language && (
