@@ -60,13 +60,16 @@ export default function RootLayout({
           <div className="lg:hidden">
             <main className="p-6 max-w-screen-sm mx-auto">
               <div className="mb-6">
-                {/*<Header />*/}
+                {<Header />}
                 <div className="mt-6">
-                  {/*<SocialLinks/>*/}
+                  {<SocialLinks/>}
+                  {<Navbar />}
+                  {children}
                 </div>
               </div>
             </main>
-            {/*<Footer />*/}
+            <Analytics />
+            <SpeedInsights />
           </div>
 
           {/* Desktop Layout */}
