@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import { GithubOriginal, COriginal, BashOriginal } from 'devicons-react';
 import {
   DiJavascript1, DiPython, DiJava, DiHtml5, DiCss3, DiGo, DiRust,
