@@ -24,7 +24,7 @@ export default function Page() {
             />
           </div>
           <div className="basis-3/4 pl-2">
-            <p className="text-3xl font-bold">IoT Developer - Intern</p>
+            <p className="text-3xl font-bold">Software Engineer - Intern</p>
             <p className="text-lg text-zinc-200 font-bold">ADL Ingegneria Informatica</p>
             <p className="text-zinc-400 font-bold">April 2022 - June 2022</p>
           </div>

@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en"
       className={cx(
-        'text-white bg-gradient-to-br from-[#380036] to-[#0CBABA] dark:text-white dark:bg-gradient-to-br from-[#380036] to-[#0CBABA]',
+        'text-white bg-linear-to-br from-[#380036] to-[#0CBABA] dark:text-white dark:bg-linear-to-br from-[#380036] to-[#0CBABA]',
         GeistSans.variable,
         GeistMono.variable
       )}>
@@ -58,7 +58,7 @@ export default function RootLayout({
         <div className="min-h-screen  text-white">
           {/* Mobile Layout */}
           <div className="lg:hidden">
-            <main className="p-6 max-w-screen-sm mx-auto">
+            <main className="p-6 max-w-(--breakpoint-sm) mx-auto">
               <div className="mb-6">
                 {<Header />}
                 <div className="mt-6">
