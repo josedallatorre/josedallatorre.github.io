@@ -15,7 +15,7 @@
     "clsx": "^2.1.1",
     "devicon": "^2.17.0",
     "devicons-react": "^1.5.0",
-    "geist": "^1.5.1",
+    "geist": "^1.7.0",
     "next": "16.1.6",
     "react": "19.2.4",
     "react-devicons": "^2.16.2",
@@ -25,14 +25,14 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
-    "@types/node": "^25.2.0",
-    "@types/react": "^19.2.10",
+    "@types/node": "^25.2.2",
+    "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-config-next": "16.1.6",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.29.2"
 }
