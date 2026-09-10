@@ -3,7 +3,7 @@ allowBuilds:
   unrs-resolver: true
 minimumReleaseAgeExclude:
   - '@types/node@25.9.1 || 26.3.0'
-  - '@types/react@19.2.15'
+  - '@types/react@19.2.15 || 19.3.0'
   - eslint@10.9.1
   - '@next/env@16.3.3 || 16.3.4'
   - '@next/eslint-plugin-next@16.3.3 || 16.3.4'
@@ -17,6 +17,10 @@ minimumReleaseAgeExclude:
   - '@next/swc-win32-x64-msvc@16.3.3 || 16.3.4'
   - eslint-config-next@16.3.3 || 16.3.4
   - next@16.3.3 || 16.3.4
+  - '@types/react-dom@19.3.0'
+  - react-dom@19.3.0
+  - react@19.3.0
+  - scheduler@0.28.0
 onlyBuiltDependencies:
   - sharp
   - unrs-resolver
