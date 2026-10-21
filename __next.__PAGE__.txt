@@ -1,15 +1,20 @@
-1:"$Sreact.fragment"
-2:I[3412,["/_next/static/chunks/21crhm2iyqm7a.js","/_next/static/chunks/2vxbmjuy5nsw4.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-7:I[3412,["/_next/static/chunks/21crhm2iyqm7a.js","/_next/static/chunks/2vxbmjuy5nsw4.js"],"ViewportBoundary"]
-8:I[3412,["/_next/static/chunks/21crhm2iyqm7a.js","/_next/static/chunks/2vxbmjuy5nsw4.js"],"MetadataBoundary"]
-9:I[10512,["/_next/static/chunks/21crhm2iyqm7a.js","/_next/static/chunks/2vxbmjuy5nsw4.js"],"IconMark"]
-6:X
-0:{"buildId":"K9Yi623DzNWCioKkGQFuY","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","p",null,{"className":"text-3xl font-bold mb-6","children":"About me"}],["$","p",null,{"children":"I am a passionate and dedicated Computer Science student with a strong interest in solving complex problems through innovative technology solutions. My goal is to make a positive impact on the world by developing cutting-edge software applications and pushing the boundaries of what is possible in the digital realm."}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Josè Dalla Torre"}],["$","meta","1",{"name":"description","content":"This is my portfolio."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","4",{"property":"og:title","content":"My Portfolio"}],["$","meta","5",{"property":"og:description","content":"This is my portfolio."}],["$","meta","6",{"property":"og:url","content":"https://josedallatorre.github.io"}],["$","meta","7",{"property":"og:site_name","content":"My Portfolio"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"My Portfolio"}],["$","meta","12",{"name":"twitter:description","content":"This is my portfolio."}],["$","link","13",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L9","14",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@a","staleTime":"$6","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@b","rootVaryParams":null,"needsRuntimeRequest":"$@c"}
-4:null
-c:true
-6:300
-6:C
-b:0
-a:"$undefined"
-5:"$undefined"
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/446tua2lufcnz.js"
+4:"/_next/static/chunks/3xlq-zqynk21c.js"
+5:I[75544,["$3","$4"],"OutletBoundary"]
+6:"$Sreact.suspense"
+a:"ViewportBoundary"
+b:I[75544,["$3","$4"],"$a"]
+c:"MetadataBoundary"
+d:I[75544,["$3","$4"],"$c"]
+e:I[89425,["$3","$4"],"IconMark"]
+9:X
+1:[["children",{"s":"__PAGE__","h":128,"d":{"r":["$","$2","c",{"children":[["$","main",null,{"children":[["$","p",null,{"className":"text-3xl font-bold mb-6","children":"About me"}],["$","p",null,{"children":"I am a passionate and dedicated Computer Science student with a strong interest in solving complex problems through innovative technology solutions. My goal is to make a positive impact on the world by developing cutting-edge software applications and pushing the boundaries of what is possible in the digital realm."}]]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"p":"$@8","v":null,"s":"$9"}}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$Lb",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$Ld",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$6",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Josè Dalla Torre"}],["$","meta","1",{"name":"description","content":"This is my portfolio."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","4",{"property":"og:title","content":"My Portfolio"}],["$","meta","5",{"property":"og:description","content":"This is my portfolio."}],["$","meta","6",{"property":"og:url","content":"https://josedallatorre.github.io"}],["$","meta","7",{"property":"og:site_name","content":"My Portfolio"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"My Portfolio"}],["$","meta","12",{"name":"twitter:description","content":"This is my portfolio."}],["$","link","13",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$Le","14",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@f","v":null,"s":"$9"}},"a":"$@10","u":"$@11","b":"_CqwQVuMwsS-79LDWaybQ"}
+7:null
+11:true
+9:300
+9:C
+10:0
+f:"$undefined"
+8:"$undefined"
