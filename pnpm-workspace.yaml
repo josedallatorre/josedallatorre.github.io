@@ -21,6 +21,8 @@ minimumReleaseAgeExclude:
   - react-dom@19.3.0
   - react@19.3.0
   - scheduler@0.28.0
+  - '@vercel/speed-insights@2.1.0'
+  - geist@1.9.1
 onlyBuiltDependencies:
   - sharp
   - unrs-resolver
